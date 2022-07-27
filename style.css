@@ -134,6 +134,7 @@ header .countdown {
     align-items: center;
     padding: 22px 50px;
     text-align: center;
+    font-size: 18px;
     font-family: var(--font-principal);
 }
 .quotes2 p {
