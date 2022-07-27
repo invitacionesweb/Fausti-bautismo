@@ -1,0 +1,311 @@
+:root {
+    --color-principal:white;
+    --color-secundario:#DDD5C0;
+    --color-terciario:#B3AA93;
+    --font-principal: 'Goudy Bookletter 1911', serif;
+    --font-secundaria:'Gwendolyn', cursive;
+}
+body {
+    background-color: var(--color-principal);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-width: 320px;
+
+}
+header {
+    width: 100%;
+    background-color: var(--color-principal);
+    color: var(--color-terciario);
+    animation-name: texto;
+    animation-duration: 5s;
+}
+
+@keyframes texto {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+header p {
+    padding: 0;
+    margin: 0;
+
+}
+
+header .texto {
+    text-align: center;
+    padding: 30px;
+    height: 90vh;
+    background-image: url(./icons/goldcompu.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.texto-int {
+    border: 2px solid var(--color-secundario);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.cruz {
+    width: 4%;
+}
+
+.texto-int h2 {
+    font-family: var(--font-principal);
+    font-size: 18px;
+
+}
+.texto-int p {
+    font-family: var(--font-principal);
+    font-size: 18px;
+}
+
+.texto-int h1 {
+    font-family: var(--font-secundaria);
+    font-size: 40px;
+}
+
+header .countdown {
+    height: 10vh;
+    background-color: var(--color-secundario);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+
+}
+.presentacion {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.presentacion-uno{
+    width: 100%;
+    height: 60vh;
+    background-image:url(./imagenes/uno.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.presentacion .quotes {
+    height: auto;
+    color: var(--color-terciario) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 22px 50px;
+    text-align: center;
+    font-family: var(--font-principal);
+  
+}
+.presentacion .quotes p {
+    padding: 0;
+    margin: 0;
+}
+.galeria {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.galeria img {
+    width: 25vw;
+}
+
+.quotes2 {
+    height: auto;
+    background-color: var(--color-secundario) ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 22px 50px;
+    text-align: center;
+    font-family: var(--font-principal);
+}
+.quotes2 p {
+    padding: 0;
+    margin: 0;
+}
+
+.cards {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    text-align: center;
+    background-image: url(./icons/goldcompu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cards-card {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 80px ;
+    color: var(--color-terciario);
+}
+
+.cards-card img {
+    width: 140px;
+}
+
+.cards-card h2 {
+    font-family: var(--font-secundaria);
+    font-size: 40px;
+}
+
+.cards-card p {
+    font-family: var(--font-principal);
+    font-size: 20px;
+}
+
+.boton {
+    border: 1px solid var(--color-principal);
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    padding: 10px 30PX;
+    text-decoration: none;
+    border-radius: 50px;
+ }
+ .boton:hover {
+     color: var(--color-secundario);
+     background-color: var(--color-principal);
+     border: 1px solid var(--color-secundario);
+     padding: 10px 30PX;
+     text-align: center;
+     text-decoration: none;
+ }
+
+.dresscode {
+    height: auto;
+    background-color: var(--color-secundario) ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 22px 50px;
+    text-align: center;
+}
+
+.dresscode h2 {
+    font-family: var(--font-secundaria);
+    font-size: 40px;
+}
+
+.dresscode p {
+    font-family: var(--font-principal);
+    font-size: 20px;
+}
+
+.asistencia {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 22px 50px;
+    text-align: center;
+    background-image: url(./imagenes/asist.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.asistencia img {
+    width: 4%;
+}
+
+.asistencia p {
+    color: var(--color-terciario);
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    padding: 40px;
+}
+footer .contenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+footer img {
+    width: 60px;
+}
+.contenido ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+
+}
+
+.contenido a {
+    color: var(--color-principal);
+}
+.contenido a:hover {
+    color: var(--color-terciario);
+}
+
+
+@media (max-width: 660px) {
+    
+    header .texto {
+        background-image: url(./icons/goldtelefono.png);
+        background-attachment: unset;
+        
+    }
+
+    .cruz {
+        width: 8%;
+    }
+
+    .presentacion {
+        width: 100%;
+        height: 90vh;
+        display: grid;
+        grid-template-columns:1fr;
+    }
+    
+    .galeria {
+        display: grid;
+        grid-template-columns:1fr 1fr;
+    }
+    .galeria img {
+        width: 50vw;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns:1fr;
+    }
+    .cards {
+        background-image: url(./icons/goldtelefono.png);
+    }
+    .asistencia img {
+        width: 14%;
+    }
+    
+}
